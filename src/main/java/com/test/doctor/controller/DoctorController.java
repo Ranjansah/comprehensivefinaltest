@@ -23,12 +23,13 @@ public class DoctorController {
 	
 
 	@RequestMapping("/sortdoctor")
+	
 	public List<Doctor> getAllDoctors()
 	{
 		List<Doctor> doctor=docservice.getAllDoctors();
 		
 		if(doctor.size()<=0)
-			throw new DetailsNotFoundException("Sorry Doctors are not Present in Database.Database is Empty");
+			throw new DetailsNotFoundException("Sorry Doctors are not Present in Database.Database is Empty at the Moment");
 		return doctor;
 	}
 	
