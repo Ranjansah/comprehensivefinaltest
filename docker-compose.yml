@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  comprehensive-finaltest:
+   build:  .
+   ports:
+     - 80:80
